@@ -15,11 +15,11 @@ jobs:
         uses: actions/checkout@v1
 
       -
-        uses: horochx/deploy-via-scp@master
+        uses: SreeramPrabhakar/scp-action@master
         with:
           local: "./*"
-          remote: ${{ secrets.REMOTE }}
-          host: ${{ secrets.HOST }}
-          port: ${{ secrets.PORT }}
-          user: ${{ secrets.USER }}
+          remote: "/home/tendu"
+          host: ec2-34-230-11-27.compute-1.amazonaws.com
+          port: 22
+          user: tendu
           key: ${{ secrets.KEY }}
