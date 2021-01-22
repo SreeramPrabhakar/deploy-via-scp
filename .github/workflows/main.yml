@@ -18,7 +18,7 @@ jobs:
         uses: SreeramPrabhakar/scp-action@master
         with:
           local: "./*"
-          remote: "/home/tendu"
+          remote: /home/tendu/
           host: ec2-34-230-11-27.compute-1.amazonaws.com
           port: 22
           user: tendu
